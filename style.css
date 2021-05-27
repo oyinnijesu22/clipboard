@@ -1,0 +1,391 @@
+@import url(https://fonts.google.com/specimen/Bai+Jamjuree);
+:root{
+    --Strong_Cyan: hsl(171, 66%, 44%);
+    --Light_Blue: hsl(233, 100%, 69%);
+    --Dark_Grayish_Blue: hsl(210, 10%, 33%);
+    --Grayish_Blue: hsl(201, 11%, 66%);
+    --white: #fff;
+    --offWhite: rgba(0, 0, 0, 0.03);
+
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body, html{
+    width: 100%;
+    font-family: 'Bai Jamjuree';
+    background-color: var(--white);
+    text-align: center;
+    
+
+}
+body{
+    background: url(images/bg-header-mobile.png);
+    background-position: top;   
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 90px;
+    
+}
+a{
+    text-decoration: none;
+}
+
+    
+main{
+    width: 88%;
+    height: auto;
+    margin: 0 auto;
+    
+}
+p{
+    line-height: 25px;
+    color: var(--Grayish_Blue);
+    font-size: 1rem;
+
+}
+.main_text, .top_section_text{
+    max-width: 650px;
+    text-align: center;
+    margin: auto;
+}
+.top_section_text p{
+    padding-top: 1.8em;
+}
+.main_content, .top_section_text{
+    width: 100%;
+}
+.main_text h1, .main_text h2{
+    font-size: 1.875rem;
+    font-weight: 600;
+    padding-bottom: 1.6em;
+
+}
+.top_section_text h2{
+    font-size: 27px;
+}
+.main_text p {
+    padding-bottom: 1.6em;
+}
+
+h2, h3{
+    font-weight: 600;
+}
+#section-B img, #section-C img{
+    width: 100%;
+}
+#section-A{
+    padding-bottom: 4.375rem;
+   
+}
+#section-B{
+    min-height: 59.9375rem;
+    padding-top: 2.875rem;
+    
+}
+.top_section_text{
+    margin-bottom: 5.625rem;
+}
+
+/* custom */
+
+
+#section-A img{
+
+        width: 100px;
+        padding-bottom: 4.375rem;
+}
+.btn{
+    
+    width: 90%;
+    height: 50px;
+    line-height: 50px;
+    margin: 20px auto ;
+    border-radius: 50px;
+    color: var(--white);
+    font-weight: 600;
+    transition: all 0.2s linear;
+
+
+}
+.btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+
+}
+#ios{
+    background-color: var(--Strong_Cyan);
+    box-shadow: 0px 3px 0px hsl(168deg 52% 39%);
+    
+}
+
+#mac{
+    background-color: var(--Light_Blue);
+    box-shadow: 0px 3px 0px hsl(233deg 65% 59%);
+}
+.computer_image{
+    padding-bottom: 92px;
+}
+.side_text{
+    margin-bottom: 60px;
+}
+.side_text h3{  
+    padding-bottom: 25px;
+    font-size: 21px;
+}
+
+#section-C{
+    padding-top: 40px;
+    padding-bottom: 82px;
+
+}
+#side_text_bottom{
+    padding-bottom: 150px;
+}
+.card{
+    margin-bottom: 70px;
+
+}
+#section-D{
+    min-height: 580px;
+}
+#section-E{
+    padding-top: 58px;
+    width: 100%;
+    
+}
+
+.card img{
+    padding-bottom: 40px;
+    width: 50px;
+    
+}
+.card h3{
+    padding-bottom: 30px;
+    font-size: 25px;
+
+}
+
+#section-E  img{
+    display: block;
+   
+    
+    margin: auto;
+    padding-bottom: 60px;
+
+    width: 130px;
+
+}
+footer{
+    background-color: var(--offWhite);
+    padding-bottom: 30px;
+
+}
+footer img{
+    width: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.links{
+    
+    
+    font-weight: 600;
+    font-size: 1.125rem;
+    transition: all 0.2s linear;
+
+}
+.links .link:hover{
+    color: var(--Strong_Cyan);
+    cursor: pointer;
+}
+.links .link{
+    margin-bottom: 40px;
+    color: var(--Dark_Grayish_Blue);
+    
+}
+
+#social_media_logo{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 35px;
+}
+
+.social_logo{
+    width: 25px;
+    height: 25px;
+    transition: all 0.2s linear;
+    fill: var(--Dark_Grayish_Blue);
+    fill-rule:"nonzero";
+   
+}
+.social_logo:hover{
+    fill: var(--Strong_Cyan);
+    fill-rule:"nonzero";
+    cursor: pointer;
+}
+.attribution a{
+    text-decoration: none;
+    
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a:hover{
+    color: var(--Strong_Cyan);
+}   
+
+@media (min-width: 700px){
+    body{
+        background: url(images/bg-header-desktop.png);
+        background-position: top;   
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-top: 90px;
+        
+    }
+    body p, h3{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    .main_text h1{
+
+        font-size: 40px;
+    }
+    
+    .btn{
+        width: 240px;
+    }
+    .buttons{
+        width:  85%;
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+    }
+    .main_text h1, .main_text h2{
+        font-weight: 600;
+        padding-bottom: 0.5em;
+    
+    }
+    .main_text .buttons {
+        padding-bottom: 2.8em;
+    }
+    .devices{
+        width: 95%;
+    }
+    #section-B .computer_image{
+        width: 90%;
+    }
+    #section-E img{
+        width: 150px;
+        margin-right: 60px;
+    }
+    #section-E{
+        
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+    }
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    }
+    .card{
+        min-width: 375px;
+        max-width: 411px;
+    }
+    #card_middle{
+        margin-left: 30px;
+    }
+    
+    
+}
+
+@media (min-width: 1220px){
+   
+    #section-B .computer_image{
+        width: 100%;
+        position: relative;
+        right: 15%;
+    }
+    #section-B .side_texts{
+        position: relative;
+        width: 32%;
+        
+        text-align: left;
+        right: 8%;
+        
+       
+    }
+    .computer_and_side_texts{
+        width: 100%;
+        display: flex;
+    }
+    .side_text{
+        margin-bottom: 20px;
+    }
+    #side_text_bottom{
+        padding-bottom: 0;
+    }
+    #side_text_top{
+        padding-top: 130px;
+    }
+    .side_text h3{
+        padding-bottom: 18px;
+    }
+    #section-F{
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+    .links_and_logo{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        padding-top: 45px;
+        /* justify-content: space-around; */
+                
+    }
+    #footer_logo{
+        justify-self: start;
+        align-self: flex-start;
+        margin-right: 22%;
+        margin-left: 10%;
+        padding: 0;
+    }
+    .links_and_logo .links{
+        list-style: none;
+        justify-self: center;
+        column-count: 3;
+        text-align: left;
+
+    }
+    .links .link{
+        margin-right: 30px;
+    }
+    #social_media_logo{
+        align-self: flex-start;
+        justify-self: flex-end;
+        margin-top: 0;
+        padding-bottom: 5rem;
+    }
+    .links{
+        justify-self: center;
+        margin-right: 15%;
+    }
+    .social_logo{
+        padding: 0;
+
+    }
+    
+  
+    
+    
+
+}
